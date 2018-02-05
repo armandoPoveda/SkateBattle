@@ -85,6 +85,11 @@ public class NavegationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
+          else if (id == R.id.nav_info) {
+
+            new MydialogFragment().show(getFragmentManager(), "SimpleDialog");
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
