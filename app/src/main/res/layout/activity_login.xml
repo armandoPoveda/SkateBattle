@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="SKATE BATTLE"
-        android:textColor="#000000"
+    android:textColor="#000"
         android:textSize="30dp" />
 
     <LinearLayout
@@ -33,14 +33,14 @@
         <ImageView
             android:layout_width="201dp"
             android:layout_height="77dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="95dp"
             android:background="@drawable/logovhs" />
 
     </LinearLayout>
 
     <LinearLayout
             android:orientation="horizontal"
-        android:layout_marginTop="150dp"
+         android:layout_marginTop="200dp"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
