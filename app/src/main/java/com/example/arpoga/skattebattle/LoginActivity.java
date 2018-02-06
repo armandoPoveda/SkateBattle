@@ -1,11 +1,14 @@
 package com.example.arpoga.skattebattle;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -16,10 +19,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // no rotar la pantalla del Login
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         //quitar actionBar LoginActivity
         getSupportActionBar().hide();
-
-
 
 // Seteamos en una Variable donde tenemos la fuente (podemos omitir este paso y ponerla directamente cuando cargamos la fuente)
         String carpetaFuente = "fonts/Moonlight.ttf";
@@ -48,10 +51,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
-
 
     }
 }

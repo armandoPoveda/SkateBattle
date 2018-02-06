@@ -33,6 +33,10 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
             <item
+                android:id="@+id/nav_googlempas"
+                android:icon="@drawable/googlemaps7"
+                android:title="Google Maps" />
+            <item
                 android:id="@+id/nav_info"
                 android:icon="@drawable/icono_info"
                 android:title="About app..." />

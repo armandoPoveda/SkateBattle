@@ -4,13 +4,17 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.DrawableContainer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
 
 /**
  * Created by arpoga on 05/02/2018.
@@ -22,6 +26,7 @@ public class MydialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+
         return createSimpleDialog();
 
     }
@@ -32,7 +37,6 @@ public class MydialogFragment extends DialogFragment {
      */
     public AlertDialog createSimpleDialog() {
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater li = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = li.inflate(R.layout.dialogo_info_app,null);
@@ -42,7 +46,7 @@ public class MydialogFragment extends DialogFragment {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                // Acciones
+
                             }
                         });
 

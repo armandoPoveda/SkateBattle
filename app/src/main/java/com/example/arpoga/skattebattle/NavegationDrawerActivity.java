@@ -93,6 +93,9 @@ public class NavegationDrawerActivity extends AppCompatActivity
             new MydialogFragment().show(getFragmentManager(), "SimpleDialog");
 
         }
+          else if (id == R.id.nav_googlempas) {
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
